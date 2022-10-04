@@ -42,6 +42,15 @@ insert into mm values(2,'aaa','a',30);
   
   
   
+  
+select 에서 주의할 점은 결과값이 단일값이냐 ,다중행이냐 구분해야 한다. 아래 예제는 단일행 단일값에만 정상 작동한다.  
+만약dbms_output.put()명령어가 있는데도 콘솔에 출력되지 않으면  
+set serverout.put()으로 콘솔 출력이 가능하도록 설정한다  
+![image](https://user-images.githubusercontent.com/80766275/193745840-9a81418a-e54e-4490-a39f-3b0e67f027e1.png)
+
+
+  
+  
 --------------------------------------  
   
   
@@ -71,10 +80,5 @@ trace 명령어로 데이터베이스를 분석할 수 있다
   
   
   
-select 에서 주의할 점은 결과값이 단일값이냐 ,다중행이냐 구분해야 한다. 아래 예제는 단일행 단일값에만 정상 작동한다.  
-만약dbms_output.put()명령어가 있는데도 콘솔에 출력되지 않으면  
-set serverout.put()으로 콘솔 출력이 가능하도록 설정한다  
-![image](https://user-images.githubusercontent.com/80766275/193745840-9a81418a-e54e-4490-a39f-3b0e67f027e1.png)
-
 
   
